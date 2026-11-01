@@ -1,0 +1,8 @@
+build/
+.dart_tool/
+android/
+.gradle/
+build.log
+analyze.log
+probe-out/
+*.log
