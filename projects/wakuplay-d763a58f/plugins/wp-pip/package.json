@@ -1,0 +1,9 @@
+{
+  "name": "wp-pip",
+  "version": "1.0.0",
+  "description": "Picture-in-Picture otomatis untuk WakuPlay",
+  "main": "index.js",
+  "files": ["android/", "index.js"],
+  "capacitor": { "android": { "src": "android" } },
+  "peerDependencies": { "@capacitor/core": "^6.0.0" }
+}

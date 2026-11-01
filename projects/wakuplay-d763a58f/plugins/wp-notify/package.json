@@ -1,0 +1,9 @@
+{
+  "name": "wp-notify",
+  "version": "1.0.0",
+  "description": "Notifikasi sistem WakuPlay tanpa Firebase (polling ke Supabase saat aplikasi tertutup)",
+  "main": "index.js",
+  "files": ["android/", "index.js"],
+  "capacitor": { "android": { "src": "android" } },
+  "peerDependencies": { "@capacitor/core": "^6.0.0" }
+}

@@ -1,0 +1,20 @@
+{
+  "appId": "com.wakuplay.app",
+  "appName": "WakuPlay",
+  "webDir": "dist",
+  "server": {
+    "hostname": "animein.net",
+    "androidScheme": "https"
+  },
+  "backgroundColor": "#111214",
+  "loggingBehavior": "none",
+  "android": {
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_wakuplay",
+      "iconColor": "#2F86FF"
+    }
+  }
+}

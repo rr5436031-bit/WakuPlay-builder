@@ -1,0 +1,9 @@
+{
+  "name": "wp-pay",
+  "version": "1.0.0",
+  "description": "WebView pembayaran SociaBuzz di dalam aplikasi WakuPlay",
+  "main": "index.js",
+  "files": ["android/", "index.js"],
+  "capacitor": { "android": { "src": "android" } },
+  "peerDependencies": { "@capacitor/core": "^6.0.0" }
+}
