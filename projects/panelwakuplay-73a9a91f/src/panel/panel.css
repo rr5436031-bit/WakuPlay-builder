@@ -1,0 +1,3 @@
+/* Panel WakuPlay: tanpa plugin native inset, jadi pakai safe-area bawaan WebView (0 kalau tidak edge-to-edge) */
+:root { --sat: env(safe-area-inset-top, 0px); --sab: env(safe-area-inset-bottom, 0px); --sabx: env(safe-area-inset-bottom, 0px); --kb: 0px; }
+.dv-page { padding-bottom: var(--sab); }
