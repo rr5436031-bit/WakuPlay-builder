@@ -1,0 +1,965 @@
+{
+  "name": "Sanka Vollerei Anime API",
+  "documentation": "https://www.sankavollerei.web.id/anime/",
+  "baseUrl": "https://www.sankavollerei.web.id",
+  "generatedAt": "2026-10-31T23:02:31.621Z",
+  "totalEndpoints": 96,
+  "sources": [
+    {
+      "name": "winbu",
+      "total": 24
+    },
+    {
+      "name": "animekompi",
+      "total": 36
+    },
+    {
+      "name": "donghub",
+      "total": 10
+    },
+    {
+      "name": "alqanime",
+      "total": 12
+    },
+    {
+      "name": "nimegami",
+      "total": 14
+    }
+  ],
+  "endpoints": [
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/home",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/home",
+      "description": "Mendapatkan daftar anime terbaru. Query Opsional: ?page=1 Working 🔍 Pencarian Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/search/:query",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/search/:query",
+      "description": "Melakukan pencarian anime. Contoh: /anime/nimegami/search/naruto Query Opsional: ?page=1 Working ℹ️ Detail Anime",
+      "parameters": [
+        ":query"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/detail/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/detail/:slug",
+      "description": "Mendapatkan detail lengkap dan link episode. Contoh: /anime/nimegami/detail/naruto-sub-indo Working 📋 Anime List (A-Z)",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/anime-list",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/anime-list",
+      "description": "Mendapatkan daftar anime A-Z. Query Opsional: ?page=1 Working 🏷️ Daftar Semua Genre",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/genre/list",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/genre/list",
+      "description": "Mendapatkan daftar semua kategori/genre. Working 🎭 Anime per Genre",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/genre/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/genre/:slug",
+      "description": "Mendapatkan anime berdasarkan genre. Contoh: /anime/nimegami/genre/action Working 📅 Daftar Semua Seasons/Musim",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/seasons/list",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/seasons/list",
+      "description": "Mendapatkan daftar musim yang tersedia. Working 🌸 Anime per Season",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/seasons/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/seasons/:slug",
+      "description": "Mendapatkan anime berdasarkan musim. Contoh: /anime/nimegami/seasons/spring-2025 Working 📑 Daftar Semua Tipe",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/type/list",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/type/list",
+      "description": "Mendapatkan daftar tipe konten (TV, Movie, OVA, dll.). Working 🎬 Konten per Tipe",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/type/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/type/:slug",
+      "description": "Mendapatkan konten berdasarkan tipe. Contoh: /anime/nimegami/type/drama-movie Working Konten J-Drama",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/j-drama",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/j-drama",
+      "description": "Mendapatkan konten J-Drama. Contoh: /anime/nimegami/j-drama Working 🎭 List Live Action / J-Drama",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/live-action",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/live-action",
+      "description": "Mendapatkan daftar Live Action & J-Drama. Gunakan /anime/nimegami/j-drama untuk daftar J-Drama murni. Working ℹ️ Detail Live Action",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/live-action/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/live-action/:slug",
+      "description": "Mendapatkan detail Live Action. Contoh: /anime/nimegami/live-action/3d-kanojo-real-girl-live-action-sub-indo Working ℹ️ Detail Drama",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "nimegami",
+      "method": "GET",
+      "path": "/anime/nimegami/drama/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/nimegami/drama/:slug",
+      "description": "Mendapatkan detail J-Drama atau Drama Movie. Contoh: /anime/nimegami/drama/ah-wilderness-drama-movie-sub-indo Working 📜 Alqanime API Endpoints Halaman Home",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/home",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/home",
+      "description": "Mendapatkan data dari halaman utama. Query Opsional: ?page=1 Jadwal Rilis",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/schedule",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/schedule",
+      "description": "Mendapatkan jadwal rilis anime per hari. Anime Populer",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/popular",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/popular",
+      "description": "Mendapatkan daftar anime populer. Query Opsional: ?page=1 Daftar Anime (A-Z)",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/list",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/list",
+      "description": "Mendapatkan list semua anime. Query Opsional: ?show=A (Huruf A-Z) Anime Ongoing",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/ongoing",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/ongoing",
+      "description": "Mendapatkan daftar anime yang sedang tayang. Query Opsional: ?page=1 Anime Tamat",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/completed",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/completed",
+      "description": "Mendapatkan daftar anime yang sudah tamat. Query Opsional: ?page=1 Anime Movie",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/movie",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/movie",
+      "description": "Mendapatkan daftar anime tipe Movie. Query Opsional: ?page=1 Pencarian Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/search/:query",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/search/:query",
+      "description": "Mencari anime berdasarkan kata kunci. Contoh: /anime/alqanime/search/naruto Daftar Genre",
+      "parameters": [
+        ":query"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/genres",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/genres",
+      "description": "Mendapatkan semua genre yang tersedia. Anime per Genre",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/genre/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/genre/:slug",
+      "description": "Mendapatkan anime berdasarkan genre. Contoh: /anime/alqanime/genre/action Anime per Season",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/season/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/season/:slug",
+      "description": "Mendapatkan anime berdasarkan season. Contoh: /episode/detective-conan-3 Detail Anime",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "alqanime",
+      "method": "GET",
+      "path": "/anime/alqanime/detail/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/alqanime/detail/:slug",
+      "description": "Mendapatkan detail lengkap, list episode & batch. Contoh: /detail/detective-conan-3 🐼 Donghub API Endpoints Halaman Home",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/home",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/home",
+      "description": "Mendapatkan data slider, populer, dan rilis terbaru. Latest Update",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/latest",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/latest",
+      "description": "Mendapatkan daftar anime yang baru saja update. Query Opsional: ?page=1 Popular Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/popular",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/popular",
+      "description": "Mendapatkan daftar anime terpopuler. Query Opsional: ?page=1 Donghua Movie",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/movie",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/movie",
+      "description": "Mendapatkan daftar movie donghua. Query Opsional: ?page=1 Jadwal Rilis",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/schedule",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/schedule",
+      "description": "Mendapatkan jadwal rilis harian. Pencarian",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/search/:query",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/search/:query",
+      "description": "Mencari anime berdasarkan judul. Anime per Genre",
+      "parameters": [
+        ":query"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/genre/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/genre/:slug",
+      "description": "Mendapatkan anime berdasarkan genre. Advanced Search",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/list?:slug",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/list?:slug",
+      "description": "Mencari anime berdasarkan judul (Advanced). Detail Anime",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/detail/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/detail/:slug",
+      "description": "Info lengkap, sinopsis, dan daftar episode. Stream & Download",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "donghub",
+      "method": "GET",
+      "path": "/anime/donghub/episode/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/donghub/episode/:slug",
+      "description": "Mendapatkan link streaming dan download episode. 🎬 Winbu API Endpoints Halaman Home",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/home",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/home",
+      "description": "Mendapatkan data homepage. Pencarian",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/search",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/search",
+      "description": "Mencari anime/film/series berdasarkan query. Params: ?q=keyword&page=1 Detail Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/anime/:id",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/anime/:id",
+      "description": "Mendapatkan detail anime. Contoh: /anime/winbu/anime/my-gift-lvl-9999-unlimited-gacha Detail Series",
+      "parameters": [
+        ":id"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/series/:id",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/series/:id",
+      "description": "Mendapatkan detail series. Contoh: /anime/winbu/series/love-on-the-turquoise-land Detail Film",
+      "parameters": [
+        ":id"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/film/:id",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/film/:id",
+      "description": "Mendapatkan detail film. Contoh: /anime/winbu/film/resurrection-road-2025 Detail Episode",
+      "parameters": [
+        ":id"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/episode/:id",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/episode/:id",
+      "description": "Mendapatkan link download & stream. Contoh: /anime/winbu/episode/my-gift-lvl-9999-unlimited-gacha-episode-8 Server Embed",
+      "parameters": [
+        ":id"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/server",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/server",
+      "description": "Mendapatkan embed player dari server tertentu. Params: ?post=66146&nume=1&type=schtml List Anime/Donghua",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/animedonghua",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/animedonghua",
+      "description": "Daftar anime dan donghua terbaru. Support: ?page=1 List Film",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/film",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/film",
+      "description": "Daftar film terbaru. Support: ?page=1 List Series",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/series",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/series",
+      "description": "Daftar series Jepang/Korea/China/Barat. Support: ?page=1 List TV Show",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/tvshow",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/tvshow",
+      "description": "Daftar TV show terbaru. Support: ?page=1 List Others",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/others",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/others",
+      "description": "Daftar konten lainnya. Support: ?page=1 Daftar Genre",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/genres",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/genres",
+      "description": "Mendapatkan daftar semua genre. Anime by Genre",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/genre/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/genre/:slug",
+      "description": "Mendapatkan anime berdasarkan genre tertentu. Contoh: /anime/winbu/genre/action?page=1 Catalog Filter",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/catalog",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/catalog",
+      "description": "Katalog anime dengan filter advanced (order, status, type, genre). Contoh: ?title=one+piece&page=1&order=update&type=TV&status=Currently+Airing Jadwal Rilis",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/schedule",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/schedule",
+      "description": "Mendapatkan jadwal rilis anime per hari. Params: ?day=all, ?day=senin Anime yang baru update",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/update",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/update",
+      "description": "Mendapatkan anime berdasarkan yang update. Contoh: /anime/winbu/genre/update?page=1 Anime Terbaru",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/latest",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/latest",
+      "description": "Mendapatkan anime berdasarkan yang terbaru. Contoh: /anime/winbu/genre/terbaru?page=1 Anime Ongoing",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/ongoing",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/ongoing",
+      "description": "Mendapatkan anime ongoing. Contoh: /anime/winbu/genre/ongoing?page=1 Anime Completed",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/completed",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/completed",
+      "description": "Mendapatkan anime Completed. Contoh: /anime/winbu/genre/completed?page=1 Anime Populer",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/populer",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/populer",
+      "description": "Mendapatkan anime berdasarkan yang sedang populer. Contoh: /anime/winbu/populer?page=1 List All Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/all-anime",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/all-anime",
+      "description": "Mendapatkan semua list anime . Contoh: /anime/winbu/genre/all-anime?page=1 List All Anime dari Z",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/all-anime-reverse",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/all-anime-reverse",
+      "description": "Mendapatkan semua list anime dari Z. Contoh: /anime/winbu/all-anime-reverse?page=1 Mendapatkan List anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "winbu",
+      "method": "GET",
+      "path": "/anime/winbu/list",
+      "url": "https://www.sankavollerei.web.id/anime/winbu/list",
+      "description": "Mendapatkan semua list anime . Contoh: /anime/winbu/list?order=popular?status=ongoing&type=movie ⛵ Animekompi API Endpoints Halaman Home",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/home",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/home",
+      "description": "Mendapatkan data dari halaman utama (Featured, Latest, Popular, Trending). Query Opsional: ?page=1 Anime Terbaru (Ongoing)",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/terbaru",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/terbaru",
+      "description": "Mendapatkan daftar anime yang baru saja rilis/update. Alias: /latest Query Opsional: ?page=1&limit=20 Batch Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/batch",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/batch",
+      "description": "Mendapatkan daftar anime yang memiliki rilis paket batch. Query Opsional: ?page=1&order=update Anime Movie",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/movie",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/movie",
+      "description": "Mendapatkan daftar film (movie) anime. Query Opsional: ?page=1&order=update Live Action",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/live-action",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/live-action",
+      "description": "Mendapatkan daftar rilis adaptasi live action. Alias: /liveaction Query Opsional: ?page=1&order=update Donghua Terbaru",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/donghua",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/donghua",
+      "description": "Mendapatkan daftar rilis khusus Donghua (Anime China). Query Opsional: ?page=1&order=update Tokusatsu Terbaru",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/tokusatsu",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/tokusatsu",
+      "description": "Mendapatkan daftar rilis khusus Tokusatsu. Query Opsional: ?page=1&order=update Upcoming Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/upcoming",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/upcoming",
+      "description": "Mendapatkan daftar anime yang akan segera tayang. Query Opsional: ?page=1 Jadwal Rilis",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/schedule",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/schedule",
+      "description": "Mendapatkan jadwal tayang anime mingguan (Senin - Minggu). Daftar Anime (List Mode)",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/list",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/list",
+      "description": "Mendapatkan daftar lengkap semua judul anime flat & grouped per huruf. Navigasi Abjad (A-Z)",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/az",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/az",
+      "description": "Filter anime berdasarkan huruf awal atau urutan abjad. Query Opsional: ?letter=A&page=1&limit=24 Pencarian Anime",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/search?q=",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/search?q=",
+      "description": "Melakukan pencarian anime berdasarkan kata kunci. Contoh: /anime/animekompi/search?q=naruto&page=1 Pencarian Suggestion (Autocomplete)",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/search/suggest?q=",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/search/suggest?q=",
+      "description": "Mendapatkan saran pencarian cepat (anime & episode). Contoh: /anime/animekompi/search/suggest?q=naruto Advanced Filter",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/filter",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/filter",
+      "description": "Memfilter anime berdasarkan genre, season, status, tipe, studio, sub, dan urutan. Contoh: .../filter?genre[]=action&order=popular Daftar Semua Filter",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/filterlist",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/filterlist",
+      "description": "Mendapatkan semua opsi filter (Genre, Season, Studio, Status, Type, Order). Daftar Semua Genre",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/genres",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/genres",
+      "description": "Mendapatkan list semua genre yang tersedia beserta jumlahnya. Daftar Semua Season",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/seasons",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/seasons",
+      "description": "Mendapatkan list semua season dikelompokkan per tahun. Daftar Semua Studio",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/studios",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/studios",
+      "description": "Mendapatkan list semua studio anime. Daftar Semua Status",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/status",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/status",
+      "description": "Mendapatkan list status rilis (ongoing, completed, upcoming). Daftar Semua Tipe",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/types",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/types",
+      "description": "Mendapatkan list tipe anime (tv, movie, ova, ona, special). Daftar Semua Urutan",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/orders",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/orders",
+      "description": "Mendapatkan list sorting order (update, score, popular, az, dll). Anime per Genre",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/genre/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/genre/:slug",
+      "description": "Mendapatkan daftar anime berdasarkan genre tertentu. Contoh: /anime/animekompi/genre/action Info Detail Genre",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/genre-detail/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/genre-detail/:slug",
+      "description": "Mendapatkan metadata detail genre tertentu. Contoh: /anime/animekompi/genre-detail/action Anime per Season",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/season/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/season/:slug",
+      "description": "Mendapatkan daftar anime berdasarkan musim (season). Contoh: /anime/animekompi/season/fall-2025 Anime per Studio",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/studio/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/studio/:slug",
+      "description": "Mendapatkan daftar anime berdasarkan studio produksi. Contoh: /anime/animekompi/studio/mappa Anime per Status",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/status/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/status/:slug",
+      "description": "Mendapatkan daftar anime berdasarkan status. Contoh: /anime/animekompi/status/ongoing Anime per Tipe",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/type/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/type/:slug",
+      "description": "Mendapatkan daftar anime berdasarkan tipe format. Contoh: /anime/animekompi/type/tv Anime per Urutan",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/order/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/order/:slug",
+      "description": "Mendapatkan daftar anime berdasarkan opsi sortir. Contoh: /anime/animekompi/order/popular Detail Anime",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/detail/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/detail/:slug",
+      "description": "Mendapatkan info lengkap, sinopsis, metadata, dan daftar episode. Contoh: .../detail/steel-ball-run-jojo-no-kimyou-na-bouken Stream & Download Episode",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/episode/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/episode/:slug",
+      "description": "Mendapatkan link streaming (default iframe, mirrors, sources), download terkelompok, dan navigasi. Contoh: .../episode/nonton-boruto-naruto-next-generations-episode-280-subtitle-indo Tooltip Metadata",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/tooltip/:slug",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/tooltip/:slug",
+      "description": "Mendapatkan metadata ringkas untuk tooltip hover. Contoh: /anime/animekompi/tooltip/steel-ball-run-jojo-no-kimyou-na-bouken Episode Mirrors",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/episode/:slug/mirrors",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/episode/:slug/mirrors",
+      "description": "Mendapatkan daftar direct embed mirror streaming. Episode Danmaku",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/episode/:slug/danmaku",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/episode/:slug/danmaku",
+      "description": "Mendapatkan komentar melayang (bullet comments/danmaku) untuk player video. Episode Komentar",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/episode/:slug/comments",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/episode/:slug/comments",
+      "description": "Mendapatkan thread diskusi/komentar penonton pada episode. Episode Reactions",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/episode/:slug/reactions",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/episode/:slug/reactions",
+      "description": "Mendapatkan statistik reaksi penonton (suka, tawa, dll). Public Settings",
+      "parameters": [
+        ":slug"
+      ],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    },
+    {
+      "source": "animekompi",
+      "method": "GET",
+      "path": "/anime/animekompi/settings",
+      "url": "https://www.sankavollerei.web.id/anime/animekompi/settings",
+      "description": "Mendapatkan konfigurasi publik dan status backend v10. 🐈 Kuramanime API Endpoints (error!) Halaman Home GET /anime/kura/home Mendapatkan data dari halaman utama Kuramanime. Pencarian Anime GET /anime/kura/search/:keyword Mencari anime berdasarkan kata kunci. Contoh: /anime/kura/search/one piece Detail Anime GET /anime/kura/anime/:id/:slug Mendapatkan detail anime berdasarkan ID dan slug. Contoh: /anime/kura/anime/3138/dandadan Nonton Episode GET",
+      "parameters": [],
+      "notes": "Periksa dokumentasi untuk parameter query tambahan."
+    }
+  ]
+}
