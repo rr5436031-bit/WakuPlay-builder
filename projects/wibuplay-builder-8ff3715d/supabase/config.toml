@@ -1,0 +1,6 @@
+# Dipakai bila deploy lewat Supabase CLI. Lewat dashboard, matikan "Verify JWT" pada kedua function.
+[functions.anime]
+verify_jwt = false
+
+[functions.app-config]
+verify_jwt = false

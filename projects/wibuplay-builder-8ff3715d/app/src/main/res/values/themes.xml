@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.WibuPlay" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/wp_bg</item>
+        <item name="android:statusBarColor">@color/wp_bg</item>
+        <item name="android:navigationBarColor">@color/wp_bg</item>
+        <item name="android:colorBackground">@color/wp_bg</item>
+    </style>
+</resources>
