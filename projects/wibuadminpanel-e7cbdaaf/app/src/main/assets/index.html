@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07060d">
+  <title>WibuPlay Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="gate" class="gate">
+    <div class="gate-card glass">
+      <div class="logo">W</div>
+      <h1>WibuPlay Panel</h1>
+      <p class="muted">Khusus Developer &amp; Admin</p>
+      <button class="btn primary block" data-login>Masuk dengan Google</button>
+      <p id="gateMsg" class="msg"></p>
+    </div>
+  </section>
+
+  <div id="app" class="app hidden">
+    <aside class="side">
+      <div class="brand"><div class="logo">W</div>Panel</div>
+      <nav id="nav"></nav>
+    </aside>
+    <main>
+      <div class="top">
+        <div id="whoami"></div>
+        <button class="btn ghost small" data-logout>Keluar</button>
+      </div>
+      <section id="view"></section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card glass">
+      <h3 id="mTitle"></h3>
+      <form id="mForm"></form>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
